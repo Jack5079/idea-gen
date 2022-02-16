@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "type": "object",
+  "title": "Words",
+  "description": "words for idea gen",
+  "patternProperties": {
+    ".+": {
+      "type": "object",
+      "title": "Word set",
+      "description": "it will have a toggle and shit",
+      "properties": {
+        "adjectives": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "title": "Adjectives",
+          "description": "the ${0} in ${0} ${1}",
+          "required": true
+        },
+        "nouns": {
+          "type": "string",
+          "title": "Nouns",
+          "description": "the ${1} in ${0} ${1}",
+          "adjectives": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "required": true
+        }
+      }
+    }
+  }
+}

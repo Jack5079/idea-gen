@@ -1,0 +1,16 @@
+{
+  "Roblox": {
+    "adjectives": ["local", "server"],
+    "nouns": ["script", "service", "gear", "tool"]
+  },
+  "Roblox [SB]": {
+    "adjectives": [
+      "hyperskidded",
+      "CR",
+      "ultraskidded",
+      "lightning",
+      "immortality"
+    ],
+    "nouns": ["cannon", "lord", "bragle", "destroyer"]
+  }
+}

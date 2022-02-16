@@ -1,0 +1,24 @@
+@import 'fluent-svelte/theme.css';
+
+body {
+  margin: 0 auto;
+  max-width: 800px;
+  height: fit-content;
+  font-family: var(--fds-font-family-text);
+  background-color: var(--fds-solid-background-base);
+  color: var(--fds-text-primary);
+  display: grid;
+  grid-template-areas:
+    'h1 h1 .'
+    '. idea idea'
+    'options options another'
+    'options options .'
+    'options options credit';
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 1ch;
+  flex-direction: column;
+}
