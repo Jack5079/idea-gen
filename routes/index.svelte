@@ -4,7 +4,6 @@
 </script>
 
 <script>
-  import make_idea from '$lib/idea'
   import '$lib/app.css'
   import Another from '@fluentui/svg-icons/icons/arrow_counterclockwise_24_regular.svg?raw'
   import IconButton from 'fluent-svelte/IconButton/IconButton.svelte'
@@ -13,6 +12,7 @@
   import ToggleSwitch from 'fluent-svelte/ToggleSwitch/ToggleSwitch.svelte'
   import { browser } from '$app/env'
   import words from '$lib/words'
+  import make_idea from '$lib/idea'
 
   const selected = Object.fromEntries(Object.keys(words).map((k) => [k, true]))
   $: actually_selected = Object.entries(selected).filter((entry) => entry[1])
@@ -25,9 +25,7 @@
 </script>
 
 {#if browser}
-  <TextBlock variant="display" style="grid-area: h1"
-    >you should make {'aeiou'.includes(idea[0]) ? 'an' : 'a'}</TextBlock
-  >
+  <TextBlock variant="display" style="grid-area: h1">you should make</TextBlock>
   <TextBlock variant="titleLarge" style="grid-area: idea">{idea}</TextBlock>
   <IconButton
     title="Another one."
